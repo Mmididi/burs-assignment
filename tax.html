@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURS – Tax</title>
+  <!-- -PMP- Tables -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- -PMP- Header -->
+<header>
+  <div class="brand">
+    <img src="images/burs-logo.png" alt="BURS logo" width="56" height="56" class="brand-logo">
+    <div class="brand-text">
+      <h1>BURS</h1>
+      <p>Botswana Unified Revenue Service</p>
+    </div>
+  </div>
+  <a href="online-services.html#biss-portal" class="btn-signin">Sign In / BISS</a>
+</header>
+
+<!-- -PMP- Navigation -->
+<nav>
+  <div class="nav-wrapper">
+    <button class="mob-btn" id="mBtn">☰</button>
+    <ul class="nav-list" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">About Us <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="about.html#mandate">Mandate</a></li>
+          <li><a href="about.html#vision-mission">Vision &amp; Mission</a></li>
+          <li><a href="about.html#org-values">Organisational Values</a></li>
+          <li><a href="about.html#org-structure">Organisational Structure</a></li>
+          <li><a href="about.html#divisions-overview">All Divisions</a></li>
+          <li><a href="about.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="#" onclick="dd(this);return false;">Tax <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li class="has-sub">
+            <a href="#" onclick="sub(this);return false;">Income Tax</a>
+            <ul class="sub-dd">
+              <li><a href="#individuals">Individuals</a></li>
+              <li><a href="#companies">Companies</a></li>
+              <li><a href="#withholding-tax">Withholding Tax</a></li>
+              <li><a href="#partnerships">Partnerships, Trusts &amp; PAYE</a></li>
+            </ul>
+          </li>
+          <li><a href="#vat">Value Added Tax (VAT)</a></li>
+          <li><a href="#ctt">Capital Transfer Tax</a></li>
+          <li><a href="#tax-amendment">Tax Amendment &amp; Tax Clearance</a></li>
+          <li><a href="#returns">Returns – All Tax Types</a></li>
+          <li><a href="#domestic-taxes">Domestic Taxes Division</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Customs &amp; Excise <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="customs.html#customs-clearance">Customs Clearance</a></li>
+          <li><a href="customs.html#travelers-guide">Traveller's Guide</a></li>
+          <li><a href="customs.html#customs-payment">Payment of Customs &amp; Import VAT</a></li>
+          <li><a href="customs.html#prohibitions">Prohibitions &amp; Restrictions</a></li>
+          <li><a href="customs.html#tariff-downloads">Customs Tariff Downloads</a></li>
+          <li><a href="customs.html#trade-agreements">Trade Agreements</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Treaties &amp; Laws <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="treaties.html#bilateral">Bilateral Agreements</a></li>
+          <li><a href="treaties.html#trade-agreements">Trade Agreements</a></li>
+          <li><a href="treaties.html#revenue-laws">Revenue Laws</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Online Services <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="online-services.html#biss-portal">BISS – Online Portal</a></li>
+          <li><a href="online-services.html#efiling">e-Filing of Returns</a></li>
+          <li><a href="online-services.html#tax-registration">Tax Registration</a></li>
+          <li><a href="online-services.html#online-payment">Online Tax Payment</a></li>
+          <li><a href="online-services.html#check-status">Check Tax Status</a></li>
+          <li><a href="online-services.html#request-assistance">Request Assistance</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="ns" placeholder="Search BURS…">
+      <button onclick="doSearch()">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<!-- -PMP- INDIVIDUALS -->
+<section id="individuals">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax › Income Tax</p><h2>Individuals – Income Tax</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Overview</h2><p>The following are taxed at individual rates: Employee, Director, Pensioner, Farmer, Sole Trader, Partners in a Partnership, and Trustee in a Trust. Applicable tax rates depend on residential status.</p></div>
+    <div class="content-card"><h2>Residency</h2><p>A person is resident in Botswana for a tax year if they have a permanent place of abode in Botswana, or are physically present for not less than 183 days in that tax year.</p></div>
+    <div class="content-card">
+      <h2>Tax Rate Table – Individuals (Residents)</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr><th>Chargeable Income (P)</th><th>Rate</th><th>Tax Payable</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>0 – 36,000</td><td>0%</td><td>Nil</td></tr>
+            <tr><td>36,001 – 72,000</td><td>5%</td><td>Up to P1,800</td></tr>
+            <tr><td>72,001 – 108,000</td><td>12.5%</td><td>Up to P4,500</td></tr>
+            <tr><td>108,001 – 144,000</td><td>18.75%</td><td>Up to P6,750</td></tr>
+            <tr><td>Over 144,000</td><td>25%</td><td>Varies</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-card">
+      <h2>Sources of Income</h2>
+      <h3>Employment</h3><p>Every person whose taxable income exceeds P36,000 per year must register with the Commissioner General and obtain a TIN. A return is required even if income is only from employment taxed at source through PAYE.</p>
+      <h3>Letting of Property</h3><p>Rental income is taxable. Allowable expenses include repairs and maintenance; capital expenses are not deductible. Proper records must be kept.</p>
+      <h3>Sale of Shares</h3><p>Net gain = Selling price – (Cost of shares + Selling expenses). 75% of net gains are taxable; 25% is deductible. Losses can offset gains in the same year but cannot be carried forward beyond one year.</p>
+      <h3>Interest</h3><p>Taxable when paid by a banking institution in excess of P7,800, or on loans to a company.</p>
+      <h3>Farming</h3><p>Individuals with more than 300 cattle, 100 hectares of land, or 1,800 goats/sheep must pay tax. Farming losses may be set off against other income up to 50% of chargeable income.</p>
+      <h3>Sole Trader / Self-Employed</h3><p>Must keep proper records and declare income from business and other sources in their individual tax return.</p>
+    </div>
+  </div>
+</section>
+
+<!-- -PMP- COMPANIES -->
+<section id="companies">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax › Income Tax</p><h2>Companies – Income Tax</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Definition</h2><p>Includes any body corporate, specified corporation, collective investment undertaking, charitable/religious/educational institution, public trust, and any association or society. Does not include a partnership.</p></div>
+    <div class="content-card">
+      <h2>Company Tax Rates</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr><th>Type of Company</th><th>Tax Rate</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Resident Companies</td><td>22%</td></tr>
+            <tr><td>Non-Resident Companies</td><td>30%</td></tr>
+            <tr><td>Approved Manufacturing Companies</td><td>15%</td></tr>
+            <tr><td>IFSC Companies</td><td>15%</td></tr>
+            <tr><td>Unapproved Pension Funds</td><td>7.5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-card"><h2>Self Assessment Tax (SAT)</h2><p>All companies pay tax under SAT. Taxpayers make their own assessment and pay tax in quarterly instalments. The SAT return is due four months after financial year end. Companies with tax payable of P50,000 or less may pay at the time of submitting the return.</p></div>
+  </div>
+</section>
+
+<!-- -PMP- WITHHOLDING TAX -->
+<section id="withholding-tax">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Withholding Tax</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Overview</h2><p>When a person makes a payment of a specified nature, they must withhold a percentage and remit it to the Commissioner General. Tax can be <strong>final</strong> (payee need not file annual return) or <strong>advance</strong> (payee must submit a return for further assessment).</p></div>
+    <div class="content-card">
+      <h2>Applicable Rates</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr><th>Payment Type</th><th>Rate</th><th>Type</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Construction Contracts (under P2m)</td><td>3%</td><td>Advance</td></tr>
+            <tr><td>Management &amp; Consultancy Fees (non-residents)</td><td>15%</td><td>Final</td></tr>
+            <tr><td>Commercial Royalties (non-residents)</td><td>15%</td><td>Final</td></tr>
+            <tr><td>Interest – Non-Residents</td><td>15%</td><td>Final</td></tr>
+            <tr><td>Interest – Residents (above P1,500/quarter)</td><td>10%</td><td>Advance</td></tr>
+            <tr><td>Dividends (residents &amp; non-residents)</td><td>15%</td><td>Final</td></tr>
+            <tr><td>Entertainment Fees</td><td>10%</td><td>Final</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-card"><h2>Payers' Obligations</h2><ul><li>Register for Other Withholding Tax</li><li>Submit ITW 7B form monthly</li><li>Submit ITW10 (OWHT) annually within 31 days after tax year end</li><li>Issue ITW9/17/21 certificates to payees within 15 days of payment</li></ul></div>
+  </div>
+</section>
+
+<!-- -PMP- PARTNERSHIPS -->
+<section id="partnerships">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Partnerships, Trusts &amp; PAYE</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Partnerships</h2><p>A partnership is a relationship between persons carrying on a business with a view to profit. Partnership income is distributed to and taxed in each partner's name. Losses not set off within five years lapse.</p></div>
+    <div class="content-card"><h2>Trusts</h2><h3>Private Trust</h3><p>Income taxed in the hands of the Trustee who holds assets for the beneficiary.</p><h3>Public Trust</h3><p>Treated as a company for tax purposes.</p></div>
+    <div class="content-card"><h2>PAYE – Pay As You Earn</h2><p>PAYE is a withholding tax where employers deduct tax from employee remuneration, including salaries, wages, bonuses, allowances, commissions, director's fees, and non-cash benefits.</p>
+      <h3>Employer Requirements</h3><ul><li>Register for PAYE when employees are engaged</li><li>Deduct tax monthly from employees earning above P3,000/month and remit using ITW 7A</li><li>Submit ITW10, ITW10A, and ITW8 within 31 days after year-end</li><li>Issue tax certificates to employees within 31 days after year-end</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- -PMP- VAT -->
+<section id="vat">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Value Added Tax (VAT)</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Exemptions</h2><p>Section 11 exempt supplies include: Financial services, Medical services, Accommodation in a dwelling, and Educational activities. Businesses engaged in both taxable and exempt supplies may only claim input tax related to taxable supplies.</p></div>
+    <div class="content-card"><h2>Diplomats</h2><p>Section 43(1) allows the Minister to grant VAT relief by refund to persons enjoying diplomatic immunity and to diplomatic or consular missions of foreign countries established in Botswana.</p></div>
+    <div class="content-card"><h2>Imports</h2><p>All goods imported into Botswana are subject to VAT. VAT liability arises when goods are cleared through Customs. The value for VAT includes taxes, duties, insurance, and freight. Deferment is allowed if adequate security is provided. Deferred VAT must be paid by the 25th of the following month.</p></div>
+    <div class="content-card"><h2>Exports</h2><p>Exports of goods and services consumed outside Botswana are zero-rated. Registered persons making zero-rated supplies are entitled to a refund of VAT on taxable inputs. Proper export documentation must be maintained.</p></div>
+  </div>
+</section>
+
+<!-- -PMP- CTT -->
+<section id="ctt">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Capital Transfer Tax (CTT)</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Overview</h2><p>CTT is levied under the Capital Transfer Tax Act, 1985 (Chapter 53:02). It is a tax on the transfer of property (tangible, intangible, movable, or immovable) by way of gift or inheritance. Value means the market value.</p></div>
+    <div class="content-card"><h2>Exemptions</h2><ul><li>Inheritance to a spouse on the death of another spouse</li><li>Marriage gifts valued less than P5,000</li><li>Household goods of a deceased person valued less than P15,000</li><li>Livestock or produce included in the donor's income</li><li>Casual gifts not exceeding P5,000 in aggregate per tax year</li><li>Property disposed for maintenance, education, or training of a child until age 21</li></ul></div>
+    <div class="content-card"><h2>Allowable Deductions</h2><ul><li>The first P100,000 of distributable value of a deceased estate</li><li>Expenditure wholly, exclusively and necessarily incurred by the donee in effecting the disposal</li><li>Debts due by the donor to persons resident in Botswana in respect of the property disposed</li></ul></div>
+  </div>
+</section>
+
+<!-- -PMP- OBJECTIONS -->
+<section id="objections">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Objections &amp; Appeals</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>General Principle</h2><p>The Commissioner General may raise an assessment at any time. The burden of proving that an assessment is excessive lies on the taxpayer.</p></div>
+    <div class="content-card">
+      <h2>Deadlines &amp; Processes</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr><th>Tax Type</th><th>Lodge Within</th><th>Appeals To</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>VAT (Section 30)</td><td>30 days of decision notice</td><td>Board of Adjudicators or High Court</td></tr>
+            <tr><td>Income Tax (Sections 88 &amp; 89)</td><td>60 days of assessment notice</td><td>High Court or Board of Adjudicators</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-card"><h2>Appeals</h2><ul><li><strong>VAT:</strong> Appeal within 30 days to High Court or Board of Adjudicators</li><li><strong>Income Tax:</strong> Appeal within 60 days; specify whether appeal is to High Court or Board of Adjudicators</li><li>Grounds must be restricted to those in the original objection</li></ul></div>
+  </div>
+</section>
+
+<!-- -PMP- TAX AMENDMENT -->
+<section id="tax-amendment">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Tax Amendment &amp; Tax Clearance</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>VAT Amendment Act 2015</h2><p>Amendments published 23rd January 2015:</p><ul><li>Zero rating of certain basic foodstuffs</li><li>VAT registration threshold revised from P500,000 to P1,000,000</li></ul></div>
+    <div class="content-card"><h2>Tax Clearance Certificates (TCC)</h2><p>Required for government tenders since 1st July 2005 (Cabinet Directive No. 32/2003).</p>
+      <h3>Procedure</h3><ul><li>Complete and submit application at nearest BURS office (all sections A–E)</li><li>Entities not registered must register first</li><li>Submit at least 4 working days before the certificate is required</li><li>All tax affairs must be up to date</li></ul>
+      <h3>Validity</h3><p>Valid for 12 months. Renewal applications due 2 weeks before expiry. Certificates may be revoked if tax affairs are not kept up to date. Covers Income Tax, Withholding Tax, VAT, and Customs &amp; Excise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- -PMP- RETURNS -->
+<section id="returns">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Returns – All Tax Types</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Income Tax Returns</h2><ul><li>ITA20 – Employment income</li><li>ITA20B – Employment plus Business</li><li>ITA20BF – Employment, Business plus Farming</li><li>ITA21 – Partnership and Trusts</li><li>ITA22 SAT – Company (Self Assessment Tax)</li><li>ITA25 – Charitable, Religious, Educational Institutions &amp; Public Trusts</li></ul></div>
+    <div class="content-card"><h2>PAYE &amp; Withholding Tax Returns</h2><ul><li>ITW10 (PAYE) – Annual Withholding Tax Return</li><li>ITW10 (OWHT) / ITW10A – Annual Return for Other Withholding Taxes</li></ul></div>
+    <div class="content-card"><h2>VAT Returns</h2><p>VAT 002.1 – Return for Remittance of VAT. Category A &amp; B: Turnover under P12m. Category C: P12m and above.</p></div>
+    <div class="content-card">
+      <h2>Filing Deadlines</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr><th>Tax Type</th><th>Deadline</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Individuals</td><td>Before end of September</td></tr>
+            <tr><td>Companies</td><td>Within 4 months after financial year end</td></tr>
+            <tr><td>Withholding Taxes</td><td>One month after end of June</td></tr>
+            <tr><td>VAT Category C</td><td>25th of following month</td></tr>
+            <tr><td>VAT Category A &amp; B</td><td>25th of the 2nd month</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- -PMP- DOMESTIC TAXES -->
+<section id="domestic-taxes">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Tax</p><h2>Domestic Taxes Division</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Design &amp; Monitoring</h2>
+      <p>The mandate of the Design & Monitoring office is to design and monitor the implementation of legislation under the purview of the Commissioner, Domestic Taxes, including the consideration of the implications of existing and proposed amendments to the revenue laws. The office also reviews and provides policy advice and recommendations to internal and external stakeholders.</p>
+
+<p>In order to fulfil its mandate, the office undertakes the following:</p>
+<ul>
+<li>Explores and makes proposals and recommendations to relevant stakeholders for growing the tax base.</li>
+<li>Costs tax expenditures created by exemptions and incentives in the revenue lawswith a view to making recommendations on their design and advising on their impact.</li>
+<li>Provides policy guidance to internal and external stakeholders</li>
+<li>In liaison with the Research and Reporting unit, advises on revenue trends including tax gaps on a macro and sectoral level.</li>
+<li>Keeps the revenue service informed and updated on developments in Government and the budgetary processes and examines legislative initiatives to provide detailed reports on how these will affect revenue collection.</li>
+<li>Advises on the impact of proposed legislative changes on the management of the revenue laws and collection of revenue</li>
+<li>Designs process flows for implementation on the proposed legislative changes in consultation with the Operations Division.</li>
+<li>Design & Monitoring is the custodian of forms and maintains version control of all forms used in the revenue service.</li>
+</ul> 
+</div>
+    <div class="content-card">
+      <h2>Legislative Review</h2>
+      <p>Category: Divisions</p>
+<p>The Legislative Review office is responsible for the drafting of legislative instruments and review of existing legislation to propose tax amendments on the following Acts:</p>
+<ul>
+  <li>Income Tax</li>
+  <li>Value Added Tax</li>
+  <li>Capital Transfer Tax</li>
+  <li>Transfer Duty</li>
+  <li>Tax Administration</li>
+  </ul>
+  <h3>Why do we conduct reviews and ammendments</h3>
+  <ul>
+    <li>To address any ambiguity in the law.</li>
+    <li>To close any gaps or loopholes identified in the legislation and to reduce revenue leakages</li>
+    <li>To introduce new developments in tax, i.e. new areas of taxation</li>
+    <li>To consider the relevance and effectiveness of tax laws.</li>
+    <li>Simplify and modernise tax laws.</li>
+  </ul>
+<h3>Below are some of the considerations on how reviews and amendments are done?</h3>
+<ul>
+  <li>Policy direction from the Ministry of Finance</li>
+  <li>Suggestions or proposals from stakeholders, civil society and the public.</li>
+  <li>Proposals and recommendations from internal stakeholders on identified gaps on implementation.</li>
+  <li>Compliance to international obligations.</li>
+</ul>
+</div>
+    <div class="content-card"><h2>Objections &amp; Appeals Office</h2>
+      <p>The Objections and Appeals office serves as an internal administrative review forum for taxpayers contesting decisions or assessments made by the Commissioner General under the Income Tax Act, Value Added Tax Act, Capital Transfer Tax Act, and Transfer Duty Act. The right to contest a tax decision or assessment is granted under specific sections of the tax laws, outlined as follows:</p>
+    <ul>
+      <li>Sections 88 to 94 of the Income Tax Act</li>
+      <li>Sections 30 to 32 of the Value Added Tax Act</li>
+      <li>Section 24 of the Transfer Duty Act</li>
+      <li>Section 10 of the Capital Transfer Act</li>
+    </ul>
+    <h3>OBJECTIONS</h3>
+    <p>An objection is a formal, written complaint submitted to the Commissioner General by a taxpayer who is dissatisfied with a tax decision. The purpose of an objection is to exercise one's legal right to have the tax decision reviewed.</p>
+    <h3>Issues covered under objections may include:</h3>
+    <ul>
+    <li>Assessments
+<li>Decision on application for VAT registration and deregistration</li>
+<li>Denial of tax clearance certificate</li>
+<li>Imposition of penalties</li>
+<li>Refusal to consider a belated objection</li>
+<li>Refusal to grant allowable deductions and exemptions</li>
+</ul>
+<h3>Appeals</h3>
+<p>An appeal is a formal written complaint made by a taxpayer who is dissatisfied with the decision of the Commissioner General, asserting their legal right to have the tax decision reviewed by an institution that did not make the decision. According to the law, the objection process serves as a prerequisite for filing an appeal. An appeal may undergo as listed below to two levels:</p>
+  <h3>Appeal to the board of Adjudicators</h3>
+  <p>Any person dissatisfied with an objection decision has the right to appeal to the Board of Adjudicators. The Minister under the Income Tax Act establishes the Board of Adjudicators. It has the power to confirm, increase, annul or order the reduction of any assessment or make such other order as it deems fit.</p>
+<h3>Appeal to the High Court or Court of Appeal</h3>
+<p>Any party (the Commissioner General or the taxpayer) who is dissatisfied with the Board's decision may appeal to the High Court</p>
+</div>
+    <div class="content-card"><h2>Tax Treaties &amp; Agreements</h2>
+      <p>The Tax Treaties and Agreements Office is responsible for managing and overseeing the application and interpretation of international tax treaties. These treaties are agreements between two or more countries that define how income and other taxes are assessed and collected in cross-border transactions to avoid double taxation and prevent tax evasion. The primary functions and responsibilities of the Office are, among others, as follows:</p>
+<ul>
+<li>Negotiation of Tax Treaties: The office participates in the negotiation of tax treaties with other countries. The role of BURS is to assist and advise the Ministry of Finance who is the lead negotiator of the DTAs or any tax agreements.</li>
+<li>Interpretation and Application: The office provides guidance on the interpretation and application of existing tax treaties. This includes clarifying terms and provisions to ensure consistent and correct application by taxpayers and tax officials.</li>
+<li>Resolution of Disputes: It handles the resolution of disputes arising under tax treaties. This is done through mutual agreement procedures (MAPs) where the office works with its counterparts in other countries to resolve issues of double taxation or other treaty-related disputes.</li>
+<li>Policy Development: The office contributes to the development of tax policy related to international taxation. This includes advising on the implications of potential treaties and amendments to existing treaties.</li>
+<li>Coordination with other Agencies: It coordinates with other governmental agencies and departments, such as the Ministry of Finance and Botswana Investment Trade Centre (BITC), to ensure a unified approach to international tax matters.</li>
+<li>Training and Support: The office provides training and support to other offices of the revenue authority, as well as to taxpayers and tax professionals, to ensure understanding and correct application of the provisions of tax treaties.</li>
+<li>Information Exchange: The office manages the exchange of information with other revenue authorities in other countries as stipulated by the tax treaties. This exchange is crucial for combating tax evasion and ensuring compliance.</li>
+<li>Advisory Role: The office acts as an advisory body within the revenue authority, providing expertise on international tax matters and the implications of treaties.</li>
+   </ul> 
+</div>
+  </div>
+</section>
+
+<!-- -PMP- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Botswana Unified Revenue Service</h3>
+      <p style="font-size:.82rem;line-height:1.9">Plot 53976, Kudumatse Road, opp Old Naledi<br>Gaborone, Botswana<br>Tel: +267 363 8000 &nbsp;|&nbsp; Toll Free: 0800 600 648<br>Email: info@burs.org.bw</p>
+      <div class="social-links"><a href="https://www.facebook.com/BotswanaUnifiedRevenueService" title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+        <a href="https://x.com/TheOfficialBURS" title="X" target="_blank" rel="noopener noreferrer">𝕏</a> 
+        <a href="https://bw.linkedin.com/company/botswana-unified-revenue-service-burs" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+      <li><a href="tax.html">Tax</a></li><li><a href="customs.html">Customs &amp; Excise</a></li>
+      <li><a href="online-services.html">Online Services</a></li>
+    </ul></div>
+    <div><h4>Support</h4><ul>
+      <li><a href="contact.html">Contact Us</a></li><li><a href="feedback.html">Feedback</a></li>
+      <li><a href="online-services.html#request-assistance">Request Assistance</a></li><li><a href="about.html#faq">FAQ</a></li>
+    </ul></div>
+    <div><h4>Legal</h4><ul>
+      <li><a href="#">Terms of Use</a></li><li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Accessibility</a></li><li><a href="quick_links.html">Sitemap</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">© 2025 Botswana Unified Revenue Service. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

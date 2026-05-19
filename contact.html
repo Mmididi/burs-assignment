@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURS – Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- -PMP- Shared external stylesheet -->
+
+  <!-- -PMP- Contact page custom styles -->
+  <style>
+    /* -PMP- Contact page layout overrides */
+    .contact-hero {
+      background: linear-gradient(135deg, var(--navy) 60%, #1a4a7a);
+      padding: 40px 28px;
+      color: var(--white);
+      text-align: center;
+    }
+    .contact-hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .contact-hero p {
+      color: rgba(255, 255, 255, .75);
+      font-size: .95rem;
+    }
+
+    /* -PMP- Info cards row */
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .contact-card {
+      background: var(--white);
+      border-radius: var(--r);
+      box-shadow: var(--sh);
+      padding: 20px 16px;
+      text-align: center;
+      border-top: 4px solid var(--teal);
+    }
+    .contact-card .icon {
+      color: var(--teal);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border: 2px solid rgba(10,124,140,.18);
+      border-radius: 50%;
+      background: rgba(10,124,140,.08);
+      font-family: "Segoe UI Symbol", "Arial Unicode MS", sans-serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .contact-card h3 { color: var(--navy); font-size: .92rem; margin-bottom: 5px; }
+    .contact-card p, .contact-card a { font-size: .83rem; color: var(--muted); display: block; }
+
+    /* -PMP- Map placeholder */
+    .map-placeholder {
+      background: linear-gradient(135deg, #e8f0fe, #f4f6f8);
+      border: 2px dashed var(--border);
+      border-radius: var(--r);
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 22px;
+    }
+    .map-placeholder p.big { font-size: 2rem; }
+    .map-placeholder h3 { color: var(--navy); font-size: 1rem; margin: 8px 0 4px; }
+    .map-placeholder p.desc { color: var(--muted); font-size: .84rem; margin-bottom: 14px; }
+    .map-btn {
+      background: var(--navy);
+      color: var(--white);
+      border: none;
+      padding: 10px 22px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: .87rem;
+      font-weight: 600;
+    }
+    .map-btn:hover { background: #1a4a7a; }
+
+    /* -PMP- Regional offices table */
+    .offices-table { width: 100%; border-collapse: collapse; font-size: .86rem; margin-top: 10px; }
+    .offices-table th { background: var(--navy); color: var(--white); padding: 9px 14px; text-align: left; }
+    .offices-table td { padding: 8px 14px; border-bottom: 1px solid var(--border); }
+    .offices-table tr:nth-child(even) { background: var(--light); }
+
+    /* -PMP- Form section */
+    .contact-form-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .contact-info-block h3 {
+      color: var(--navy);
+      font-size: .95rem;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 7px;
+      margin-bottom: 13px;
+    }
+    .contact-info-block p { font-size: .86rem; margin-bottom: 5px; }
+    .quick-help {
+      margin-top: 16px;
+      padding: 13px;
+      background: var(--light);
+      border-radius: 6px;
+      border-left: 4px solid var(--teal);
+    }
+    .quick-help p:first-child { font-size: .85rem; font-weight: 600; }
+    .quick-help p:last-child  { font-size: .82rem; color: var(--muted); margin-top: 3px; }
+
+    @media (max-width: 768px) {
+      .contact-form-wrap { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- -PMP- Header -->
+<header>
+  <div class="brand">
+    <img src="images/burs-logo.png" alt="BURS logo" width="56" height="56" class="brand-logo">
+    <div class="brand-text">
+      <h1>BURS</h1>
+      <p>Botswana Unified Revenue Service</p>
+    </div>
+  </div>
+  <a href="online-services.html#biss-portal" class="btn-signin">Sign In / BISS</a>
+</header>
+
+<!-- -PMP- Navigation -->
+<nav>
+  <div class="nav-wrapper">
+    <button class="mob-btn" id="mBtn">☰</button>
+    <ul class="nav-list" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">About Us <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="about.html#mandate">Mandate</a></li>
+          <li><a href="about.html#vision-mission">Vision &amp; Mission</a></li>
+          <li><a href="about.html#divisions-overview">All Divisions</a></li>
+          <li><a href="about.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Tax <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="tax.html#individuals">Individuals</a></li>
+          <li><a href="tax.html#companies">Companies</a></li>
+          <li><a href="tax.html#vat">Value Added Tax (VAT)</a></li>
+          <li><a href="tax.html#returns">Returns – All Tax Types</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Customs &amp; Excise <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="customs.html#customs-clearance">Customs Clearance</a></li>
+          <li><a href="customs.html#travelers-guide">Traveller's Guide</a></li>
+          <li><a href="customs.html#tariff-downloads">Customs Tariff Downloads</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Treaties &amp; Laws <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="treaties.html#bilateral">Bilateral Agreements</a></li>
+          <li><a href="treaties.html#revenue-laws">Revenue Laws</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Online Services <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="online-services.html#biss-portal">BISS – Online Portal</a></li>
+          <li><a href="online-services.html#efiling">e-Filing of Returns</a></li>
+          <li><a href="online-services.html#online-payment">Online Tax Payment</a></li>
+          <li><a href="online-services.html#check-status">Check Tax Status</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="ns" placeholder="Search BURS…">
+      <button onclick="doSearch()">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<!-- -PMP- Hero section -->
+<div class="contact-hero">
+  <h2>Contact Us</h2>
+  <p>We are here to help – reach us through any of the channels below.</p>
+</div>
+
+<div class="page-container">
+
+  <!-- -PMP- Quick contact cards -->
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="icon">☎︎</div>
+      <h3>Call Us</h3>
+      <p>+267 363 8000</p>
+      <p>Toll Free: 0800 600 648</p>
+    </div>
+    <div class="contact-card">
+      <div class="icon">✉︎</div>
+      <h3>Email Us</h3>
+      <a href="mailto:info@burs.org.bw">info@burs.org.bw</a>
+    </div>
+    <div class="contact-card">
+      <div class="icon">◷</div>
+      <h3>Office Hours</h3>
+      <p>Monday – Friday</p>
+      <p>07:30 – 16:30</p>
+    </div>
+    <div class="contact-card">
+      <div class="icon">⌖</div>
+      <h3>Head Office</h3>
+      <p>Plot 53976, Kudumatse Road</p>
+      <p>Gaborone, Botswana</p>
+    </div>
+  </div>
+
+  <!-- -PMP- Main contact content -->
+  <div class="content-card">
+    <div class="contact-form-wrap">
+
+      <!-- -PMP- Left: Contact info -->
+      <div class="contact-info-block">
+        <h3>Regional Offices</h3>
+        <table class="offices-table">
+          <thead><tr><th>Region</th><th>Phone</th></tr></thead>
+          <tbody>
+            <tr><td>Francistown</td><td>+267 241 3392</td></tr>
+            <tr><td>Maun</td><td>+267 686 0368</td></tr>
+            <tr><td>Kasane</td><td>+267 625 0316</td></tr>
+            <tr><td>Lobatse</td><td>+267 533 0424</td></tr>
+            <tr><td>Selebi-Phikwe</td><td>+267 261 0370</td></tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top:16px">
+          <h3 style="border-bottom:2px solid var(--gold);padding-bottom:6px;margin-bottom:10px">Inland &amp; Border Offices</h3>
+          <p style="font-size:.84rem;color:var(--muted)">Palapye, Jwaneng, Orapa, Sowa Town, and all designated border posts of entry.</p>
+        </div>
+
+        <div class="quick-help">
+          <p>Need quick help?</p>
+          <p>Use our <a href="online-services.html#request-assistance">online assistance form</a> or <a href="feedback.html">submit feedback</a>.</p>
+        </div>
+      </div>
+
+      <!-- -PMP- Right: Contact form -->
+      <div>
+        <h3 style="border-bottom:2px solid var(--gold);padding-bottom:7px;margin-bottom:14px;color:var(--navy);font-size:.95rem">Send Us a Message</h3>
+        <div class="form-field"><label>Full Name *</label><input type="text" placeholder="Your full name"></div>
+        <div class="form-field"><label>Email Address *</label><input type="email" placeholder="your@email.com"></div>
+        <div class="form-field"><label>Phone Number</label><input type="tel" placeholder="+267 000 0000"></div>
+        <div class="form-field"><label>Subject *</label>
+          <select>
+            <option value="">-- Select subject --</option>
+            <option>Income Tax Query</option>
+            <option>VAT Query</option>
+            <option>Customs &amp; Excise</option>
+            <option>BISS / Online Services</option>
+            <option>Tax Registration</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-field"><label>Message *</label><textarea placeholder="Describe your query in detail…"></textarea></div>
+        <button class="submit-button" onclick="alert('Message sent. BURS will respond within 2 business days.')">Send Message</button>
+        <p class="form-note">All fields marked * are required. We aim to respond within 2 business days.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- -PMP- Map preview block -->
+  <div class="map-placeholder">
+    <p class="big">🗺️</p>
+    <h3>Find a BURS Office Near You</h3>
+    <p class="desc">Regional offices in Gaborone, Francistown, Maun, Kasane, Lobatse, and Selebi-Phikwe.</p>
+    <button class="map-btn" onclick="alert('Interactive map coming soon')">View Office Locations</button>
+  </div>
+
+</div>
+
+<!-- -PMP- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Botswana Unified Revenue Service</h4>
+      <p style="font-size:.82rem;line-height:1.9">Plot 53976, Kudumatse Road, opp Old Naledi<br>Gaborone, Botswana<br>Tel: +267 363 8000 &nbsp;|&nbsp; Toll Free: 0800 600 648<br>Email: info@burs.org.bw</p>
+      <div class="social-links"><a href="https://www.facebook.com/BotswanaUnifiedRevenueService" title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+        <a href="https://x.com/TheOfficialBURS" title="X" target="_blank" rel="noopener noreferrer">𝕏</a>
+        <a href="https://bw.linkedin.com/company/botswana-unified-revenue-service-burs" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+      <li><a href="tax.html">Tax</a></li><li><a href="customs.html">Customs &amp; Excise</a></li>
+      <li><a href="online-services.html">Online Services</a></li>
+      
+    </ul></div>
+    <div><h4>Support</h4><ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="online-services.html#request-assistance">Request Assistance</a></li>
+      <li><a href="about.html#faq">FAQ</a></li>
+    </ul></div>
+    <div><h4>Legal</h4><ul>
+      <li><a href="#">Terms of Use</a></li><li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Accessibility</a></li><li><a href="quick_links.html">Sitemap</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">© 2025 Botswana Unified Revenue Service. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

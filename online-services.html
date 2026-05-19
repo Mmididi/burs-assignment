@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURS – Online Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- -PMP- Header -->
+<header>
+  <div class="brand">
+    <img src="images/burs-logo.png" alt="BURS logo" width="56" height="56" class="brand-logo">
+    <div class="brand-text">
+      <h1>BURS</h1>
+      <p>Botswana Unified Revenue Service</p>
+    </div>
+  </div>
+  <a href="#biss-portal" class="btn-signin">Sign In / BISS</a>
+</header>
+
+<!-- -PMP- Navigation -->
+<nav>
+  <div class="nav-wrapper">
+    <button class="mob-btn" id="mBtn">☰</button>
+    <ul class="nav-list" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">About Us <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="about.html#mandate">Mandate</a></li>
+          <li><a href="about.html#vision-mission">Vision &amp; Mission</a></li>
+          <li><a href="about.html#divisions-overview">All Divisions</a></li>
+          <li><a href="about.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Tax <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="tax.html#individuals">Individuals</a></li>
+          <li><a href="tax.html#companies">Companies</a></li>
+          <li><a href="tax.html#vat">Value Added Tax (VAT)</a></li>
+          <li><a href="tax.html#returns">Returns – All Tax Types</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Customs &amp; Excise <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="customs.html#customs-clearance">Customs Clearance</a></li>
+          <li><a href="customs.html#travelers-guide">Traveller's Guide</a></li>
+          <li><a href="customs.html#tariff-downloads">Customs Tariff Downloads</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Treaties &amp; Laws <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="treaties.html#bilateral">Bilateral Agreements</a></li>
+          <li><a href="treaties.html#revenue-laws">Revenue Laws</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="#" onclick="dd(this);return false;">Online Services <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#biss-portal">BISS – Online Portal</a></li>
+          <li><a href="#efiling">e-Filing of Returns</a></li>
+          <li><a href="#tax-registration">Tax Registration</a></li>
+          <li><a href="#online-payment">Online Tax Payment</a></li>
+          <li><a href="#check-status">Check Tax Status</a></li>
+          <li><a href="#request-assistance">Request Assistance</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="ns" placeholder="Search BURS…">
+      <button onclick="doSearch()">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<!-- -PMP- BISS PORTAL -->
+<section id="biss-portal">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Online Services</p><h2>BISS – Online Portal</h2></div>
+  <div class="narrow-page-container"><div class="content-card">
+    <h2 style="text-align:center;font-size:1.2rem">BURS Integrated Service System</h2>
+    <div class="form-field"><label>Username</label><input type="text" placeholder="Enter your username"></div>
+    <div class="form-field"><label>Password</label><input type="password" placeholder="Enter your password"></div>
+    <button class="submit-button" onclick="alert('Login submitted successfully')">Login</button>
+    <p class="form-note"><a href="#">Forgot Username?</a> &nbsp;|&nbsp; <a href="#">Forgot Password?</a></p>
+    <hr style="margin:18px 0;border:none;border-top:1px solid var(--border)">
+    <p style="font-size:.87rem;text-align:center;margin-bottom:11px">New taxpayer? Register online to get your TIN.</p>
+    <button class="submit-button" style="background:var(--teal)" onclick="location.href='#tax-registration'">Register Now</button>
+  </div></div>
+
+
+</section>
+
+<!-- -PMP- E-FILING -->
+<section id="efiling">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Online Services</p><h2>e-Filing of Returns</h2></div>
+  <div class="narrow-page-container"><div class="content-card">
+    <div class="form-field"><label>Taxpayer Identification Number (TIN)</label><input type="text" placeholder="Enter your TIN"></div>
+    <div class="form-field"><label>Full Name</label><input type="text" placeholder="Enter your full name"></div>
+    <div class="form-field"><label>Return Type</label><select><option value="">Select return type</option><option>Income Tax Return</option><option>VAT Return</option><option>PAYE Return</option><option>Withholding Tax Return</option><option>Customs &amp; Excise Return</option></select></div>
+    <div class="form-field"><label>Tax Period</label><input type="month"></div>
+    <div class="form-field"><label>Upload Supporting Documents</label><input type="file" multiple></div>
+    <button class="submit-button" onclick="alert('Return submitted successfully')">Submit Return</button>
+    <p class="form-note">Ensure all details are correct before submitting. Returns are processed securely through BURS systems.</p>
+  </div></div>
+
+
+</section>
+
+<!-- -PMP- TAX REGISTRATION -->
+<section id="tax-registration">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Online Services</p><h2>Tax Registration Portal</h2></div>
+  <div class="narrow-page-container"><div class="content-card">
+    <div class="form-field"><label>Full Name</label><input type="text" placeholder="Enter your full name"></div>
+    <div class="form-field"><label>National ID / Passport Number</label><input type="text" placeholder="Enter ID or Passport number"></div>
+    <div class="form-field"><label>Date of Birth</label><input type="date"></div>
+    <div class="form-field"><label>Physical Address</label><input type="text" placeholder="Plot number, street, city"></div>
+    <div class="form-field"><label>Phone Number</label><input type="tel" placeholder="+267 000 0000"></div>
+    <div class="form-field"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+    <div class="form-field"><label>Registration Type</label><select><option value="">Select type</option><option>Individual</option><option>Company</option><option>Partnership</option><option>Trust</option><option>Non-Resident</option></select></div>
+    <button class="submit-button" onclick="alert('Registration submitted. Your TIN will be issued within 3 business days.')">Submit Registration</button>
+    <p class="form-note">Ensure all details match your national ID or passport. BURS will contact you within 3 business days.</p>
+  </div></div>
+
+
+</section>
+
+<!-- -PMP- ONLINE PAYMENT -->
+<section id="online-payment">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Online Services</p><h2>Online Tax Payment</h2></div>
+  <div class="narrow-page-container"><div class="content-card">
+    <div class="form-field"><label>Taxpayer Identification Number (TIN)</label><input type="text" placeholder="Enter your TIN"></div>
+    <div class="form-field"><label>Tax Type</label><select><option value="">Select tax type</option><option>Income Tax</option><option>VAT</option><option>PAYE</option><option>Withholding Tax</option><option>Customs Duty</option><option>Capital Transfer Tax</option></select></div>
+    <div class="form-field"><label>Assessment / Reference Number</label><input type="text" placeholder="Enter reference number"></div>
+    <div class="form-field"><label>Amount (P)</label><input type="number" placeholder="0.00"></div>
+    <div class="form-field"><label>Payment Method</label><select><option value="">Select method</option><option>Debit / Credit Card</option><option>Internet Banking</option><option>Mobile Money</option></select></div>
+    <button class="submit-button" onclick="alert('Payment submitted securely')">Submit Payment</button>
+    <p class="form-note">Payments are processed securely through BURS systems.</p>
+  </div></div>
+
+
+</section>
+
+<!-- -PMP- CHECK STATUS -->
+<section id="check-status">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Online Services</p><h2>Check Tax Compliance Status</h2></div>
+  <div class="narrow-page-container"><div class="content-card">
+    <div class="form-field"><label>Taxpayer Identification Number (TIN)</label><input type="text" placeholder="Enter your TIN"></div>
+    <div class="form-field"><label>Full Name</label><input type="text" placeholder="Enter your full name"></div>
+    <button class="submit-button" onclick="alert('Status verified')">Verify Status</button>
+    <div style="margin-top:16px;padding:14px;background:var(--light);border-radius:6px;border:1px solid var(--border);font-size:.88rem">
+      <p><strong>Status:</strong> <span class="badge">Compliant</span></p>
+      <p style="margin-top:7px"><strong>Outstanding Obligations:</strong> None</p>
+      <p><strong>Last Return Filed:</strong> March 2026 (VAT)</p>
+    </div>
+  </div></div>
+
+
+</section>
+
+<!-- -PMP- REQUEST ASSISTANCE -->
+<section id="request-assistance">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Online Services</p><h2>Request Assistance</h2></div>
+  <div class="narrow-page-container"><div class="content-card">
+    <div class="form-field"><label>Full Name</label><input type="text" placeholder="Enter your full name"></div>
+    <div class="form-field"><label>TIN (if applicable)</label><input type="text" placeholder="Enter your TIN"></div>
+    <div class="form-field"><label>Email Address</label><input type="email" placeholder="Enter your email"></div>
+    <div class="form-field"><label>Phone Number</label><input type="tel" placeholder="Enter your phone number"></div>
+    <div class="form-field"><label>Service Area</label><select><option value="">Select service</option><option>e-Filing of Returns</option><option>Tax Registration</option><option>Online Payments</option><option>Tax Clearance Certificate</option><option>General Inquiry</option></select></div>
+    <div class="form-field"><label>Describe Your Issue</label><textarea placeholder="Provide details of your request…"></textarea></div>
+    <button class="submit-button" onclick="alert('Request submitted. BURS will respond within 2 business days.')">Submit Request</button>
+    <p class="form-note">Your request will be forwarded to the appropriate BURS division. Ensure your contact details are accurate.</p>
+  </div></div>
+
+
+</section>
+
+<!-- -PMP- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Botswana Unified Revenue Service</h3>
+      <p style="font-size:.82rem;line-height:1.9">Plot 53976, Kudumatse Road, opp Old Naledi<br>
+        Gaborone, Botswana<br>
+        Tel: +267 363 8000 &nbsp;|&nbsp; Toll Free: 0800 600 648<br>
+        Email: info@burs.org.bw</p>
+      <div class="social-links"><a href="https://www.facebook.com/BotswanaUnifiedRevenueService" title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+        <a href="https://x.com/TheOfficialBURS" title="X" target="_blank" rel="noopener noreferrer">𝕏</a>
+        <a href="https://bw.linkedin.com/company/botswana-unified-revenue-service-burs" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+      <li><a href="tax.html">Tax</a></li><li><a href="customs.html">Customs &amp; Excise</a></li>
+      <li><a href="online-services.html">Online Services</a></li><li>
+    </ul></div>
+    <div><h4>Support</h4><ul>
+      <li><a href="contact.html">Contact Us</a></li><li><a href="feedback.html">Feedback</a></li>
+      <li><a href="#request-assistance">Request Assistance</a></li><li><a href="about.html#faq">FAQ</a></li>
+    </ul></div>
+    <div><h4>Legal</h4><ul>
+      <li><a href="#">Terms of Use</a></li><li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Accessibility</a></li><li><a href="quick_links.html">Sitemap</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">© 2025 Botswana Unified Revenue Service. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURS – Treaties &amp; Laws</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- -PMP- Header -->
+<header>
+  <div class="brand">
+    <img src="images/burs-logo.png" alt="BURS logo" width="56" height="56" class="brand-logo">
+    <div class="brand-text">
+      <h1>BURS</h1>
+      <p>Botswana Unified Revenue Service</p>
+    </div>
+  </div>
+  <a href="online-services.html#biss-portal" class="btn-signin">Sign In / BISS</a>
+</header>
+
+<!-- -PMP- Navigation -->
+<nav>
+  <div class="nav-wrapper">
+    <button class="mob-btn" id="mBtn">☰</button>
+    <ul class="nav-list" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">About Us <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="about.html#mandate">Mandate</a></li>
+          <li><a href="about.html#vision-mission">Vision &amp; Mission</a></li>
+          <li><a href="about.html#divisions-overview">All Divisions</a></li>
+          <li><a href="about.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Tax <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="tax.html#individuals">Individuals</a></li>
+          <li><a href="tax.html#companies">Companies</a></li>
+          <li><a href="tax.html#vat">Value Added Tax (VAT)</a></li>
+          <li><a href="tax.html#ctt">Capital Transfer Tax</a></li>
+          <li><a href="tax.html#returns">Returns – All Tax Types</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Customs &amp; Excise <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="customs.html#customs-clearance">Customs Clearance</a></li>
+          <li><a href="customs.html#travelers-guide">Traveller's Guide</a></li>
+          <li><a href="customs.html#prohibitions">Prohibitions &amp; Restrictions</a></li>
+          <li><a href="customs.html#tariff-downloads">Customs Tariff Downloads</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="#" onclick="dd(this);return false;">Treaties &amp; Laws <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#bilateral">Bilateral Agreements</a></li>
+          <li><a href="#trade-agreements">Trade Agreements</a></li>
+          <li><a href="#revenue-laws">Revenue Laws</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Online Services <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="online-services.html#biss-portal">BISS – Online Portal</a></li>
+          <li><a href="online-services.html#efiling">e-Filing of Returns</a></li>
+          <li><a href="online-services.html#tax-registration">Tax Registration</a></li>
+          <li><a href="online-services.html#online-payment">Online Tax Payment</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="ns" placeholder="Search BURS…">
+      <button onclick="doSearch()">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<!-- -PMP- BILATERAL AGREEMENTS -->
+<section id="bilateral">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Treaties &amp; Laws</p><h2>Bilateral Agreements (DTAAs)</h2></div>
+  <div class="page-container"><div class="content-card"><h2>Double Taxation Avoidance Agreements</h2>
+    <ul class="download-list">
+      <li><span class="download-title">Botswana–Russia Agreement</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Seychelles DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Ireland DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–United Arab Emirates DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Luxembourg DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Czech Republic DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–China DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Lesotho DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Zambia Tax Bilateral Agreement</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Swaziland Agreement</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Sweden DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Mauritius DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–France DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–UK DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Zimbabwe DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–South Africa DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Namibia DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–Barbados DTAA</span><a href="#">Download</a></li>
+      <li><span class="download-title">Botswana–India DTAA</span><a href="#">Download</a></li>
+    </ul>
+  </div></div>
+</section>
+
+<!-- -PMP- TRADE AGREEMENTS -->
+<section id="trade-agreements">
+  <div class="banner">
+    <p class="crumb"><a href="index.html">Home</a> &rsaquo; Treaties &amp; Laws</p>
+    <h2>Trade Agreements</h2>
+  </div>
+  <div class="page-container">
+    <div class="content-card">
+      <h2>Regional and International Trade Agreements</h2>
+      <p>These agreements support trade cooperation, customs administration, and movement of goods between Botswana and partner countries or regions.</p>
+      <ul class="download-list">
+        <li><span class="download-title">SADC &ndash; EU Economic Partnership Agreement (SADC &ndash; EU EPA)</span><a href="documents/sadc-eu-epa.pdf" download>Download</a></li>
+        <li><span class="download-title">Southern African Customs Union Agreement</span><a href="documents/sacu-agreement.pdf" download>Download</a></li>
+        <li><span class="download-title">Botswana-Zimbabwe Trade Agreement</span><a href="documents/botswana-zimbabwe-trade.pdf" download>Download</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- -PMP- REVENUE LAWS -->
+<section id="revenue-laws">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Treaties &amp; Laws</p><h2>Revenue Laws</h2></div>
+  <div class="page-container"><div class="content-card"><h2>Acts Available for Download</h2>
+    <ul class="download-list">
+      <li><span class="download-title">Income Tax Amendment Act 2024 &amp; Commencement Order 2024</span><a href="#">Download</a></li>
+      <li><span class="download-title">Excise Duty Act</span><a href="#">Download</a></li>
+      <li><span class="download-title">Customs Act Duty</span><a href="#">Download</a></li>
+      <li><span class="download-title">CAP 53-01 Capital Transfer Tax Act</span><a href="#">Download</a></li>
+      <li><span class="download-title">CAP 50-03 Value Added Tax Act Subsidiary Legislation</span><a href="#">Download</a></li>
+      <li><span class="download-title">CAP 50-03 Value Added Tax Act</span><a href="#">Download</a></li>
+      <li><span class="download-title">CAP 52-01 Income Tax Act Subsidiary Legislation</span><a href="#">Download</a></li>
+      <li><span class="download-title">CAP 52-01 Income Tax Act</span><a href="#">Download</a></li>
+      <li><span class="download-title">CAP 53-03 Botswana Unified Revenue Service Act</span><a href="#">Download</a></li>
+    </ul>
+  </div></div>
+</section>
+
+<!-- -PMP- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Botswana Unified Revenue Service</h3>
+      <p style="font-size:.82rem;line-height:1.9">Plot 53976, Kudumatse Road, opp Old Naledi<br>Gaborone, Botswana<br>Tel: +267 363 8000 &nbsp;|&nbsp; Toll Free: 0800 600 648<br>Email: info@burs.org.bw</p>
+      <div class="social-links"><a href="https://www.facebook.com/BotswanaUnifiedRevenueService" title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+        <a href="https://x.com/TheOfficialBURS" title="X" target="_blank" rel="noopener noreferrer">𝕏</a>
+        <a href="https://bw.linkedin.com/company/botswana-unified-revenue-service-burs" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+      <li><a href="tax.html">Tax</a></li><li><a href="customs.html">Customs &amp; Excise</a></li>
+      <li><a href="online-services.html">Online Services</a></li>
+    </ul></div>
+    <div><h4>Support</h4><ul>
+      <li><a href="contact.html">Contact Us</a></li><li><a href="feedback.html">Feedback</a></li>
+      <li><a href="online-services.html#request-assistance">Request Assistance</a></li><li><a href="about.html#faq">FAQ</a></li>
+    </ul></div>
+    <div><h4>Legal</h4><ul>
+      <li><a href="#">Terms of Use</a></li><li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Accessibility</a></li><li><a href="quick_links.html">Sitemap</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">© 2025 Botswana Unified Revenue Service. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURS – Customs &amp; Excise</title>
+  <!-- -PMP- Tables -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- -PMP- Header -->
+<header>
+  <div class="brand">
+    <img src="images/burs-logo.png" alt="BURS logo" width="56" height="56" class="brand-logo">
+    <div class="brand-text">
+      <h1>BURS</h1>
+      <p>Botswana Unified Revenue Service</p>
+    </div>
+  </div>
+  <a href="online-services.html#biss-portal" class="btn-signin">Sign In / BISS</a>
+</header>
+
+<!-- -PMP- Navigation -->
+<nav>
+  <div class="nav-wrapper">
+    <button class="mob-btn" id="mBtn">☰</button>
+    <ul class="nav-list" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">About Us <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="about.html#mandate">Mandate</a></li>
+          <li><a href="about.html#vision-mission">Vision &amp; Mission</a></li>
+          <li><a href="about.html#org-structure">Organisational Structure</a></li>
+          <li><a href="about.html#divisions-overview">All Divisions</a></li>
+          <li><a href="about.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Tax <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="tax.html#individuals">Individuals</a></li>
+          <li><a href="tax.html#companies">Companies</a></li>
+          <li><a href="tax.html#vat">Value Added Tax (VAT)</a></li>
+          <li><a href="tax.html#ctt">Capital Transfer Tax</a></li>
+          <li><a href="tax.html#returns">Returns – All Tax Types</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="#" onclick="dd(this);return false;">Customs &amp; Excise <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#customs-clearance">Customs Clearance</a></li>
+          <li><a href="#travelers-guide">Traveller's Guide</a></li>
+          <li><a href="#customs-payment">Payment of Customs &amp; Import VAT</a></li>
+          <li><a href="#prohibitions">Prohibitions &amp; Restrictions</a></li>
+          <li><a href="#tariff-downloads">Customs Tariff Downloads</a></li>
+          <li><a href="#trade-agreements">Trade Agreements</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Treaties &amp; Laws <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="treaties.html#bilateral">Bilateral Agreements</a></li>
+          <li><a href="treaties.html#trade-agreements">Trade Agreements</a></li>
+          <li><a href="treaties.html#revenue-laws">Revenue Laws</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Online Services <span style="font-size:.6rem">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="online-services.html#biss-portal">BISS – Online Portal</a></li>
+          <li><a href="online-services.html#efiling">e-Filing of Returns</a></li>
+          <li><a href="online-services.html#tax-registration">Tax Registration</a></li>
+          <li><a href="online-services.html#online-payment">Online Tax Payment</a></li>
+          <li><a href="online-services.html#check-status">Check Tax Status</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="ns" placeholder="Search BURS…">
+      <button onclick="doSearch()">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<!-- -PMP- CUSTOMS CLEARANCE -->
+<section id="customs-clearance">
+  <div class="banner">
+    <p class="crumb"><a href="index.html">Home</a> › Customs &amp; Excise</p>
+    <h2>Customs Clearance</h2>
+  </div>
+  <div class="page-container"></div>
+    <div class="content-card">
+      <h2>Imports &amp; Exports</h2>
+      <p>All goods imported or exported must be declared to BURS using the appropriate Customs Form with supporting documents (import licence, invoice, certificate of origin, etc.). Commercial goods must be cleared through licensed Clearing Agents or registered companies. Travellers may use Form J – Baggage and Currency Import Declaration.</p>
+    </div>
+    <div class="content-card">
+      <h2>Trader Identification Number (TIN)</h2>
+      <p>All importers and exporters with an annual threshold of at least P20 000.00 or more are required to formally register with BURS (Customs & Excise Division) and will be allocated a unique Trader Identification Number (TIN). TIN Application Form</p>
+<p>All Clearing agents are required to register irrespective of the threshold.</p>
+<p>One must be registered with BURS/Tax to get a TIN</p> 
+<p>For more information please contact BURS (Customs & Excise Division - Systems Clearance Section).</p></div>
+    <div class="content-card">
+      <h2>Licensing of Customs Clearing Agents</h2>
+      <p>There are a number of Customs Clearing Agents who have been licensed to provide Customs services to importers and exporters in Botswana. Despite being regulated by BURS, these are independent companies rendering their services at market rates.</p> 
+<p>Any person wishing to apply for a licence to trade as a Customs Clearing Agent should apply, TO ANY customs inland Office, by completing Form 185 which will be considered in the event all registration requirements have been met. A license, which expires on 31st December of year of application, is then issued upon lodgement of P20,000.00 security bond.</p>
+  <p>A Customs Clearing Agent licence holder is required to ensure that:</p>
+  <ul>
+    <li>Clearing clerks in his/her employ are fully conversant with the Customs and Excise procedures and requirements.</li>
+    <li>Clearing clerks in his/her employ conduct their business in accordance with any instructions issued by the Commissioner of Customs and Excise.</li>
+    <li>He/she maintains a high ethical and in pursuance thereof will disclose all relevant facts which are essential to contribute to the proper administration of the Customs and Excise Act.</li>
+    <li>He/she notifies the Commissioner of Customs and Excise in writing of any intention to change the name, address (postal or physical), names of employees.</li>
+    <li>His/her company is represented at the highest level at all meetings called by the Commissioner of Customs and Excise.</li>
+    <li>He/she keeps within Botswana such books of accounts and documents relating to business transactions in such a form and manner as required by the Commissioner of Customs & Excise and shall upon demand by him produce to him such books of accounts or documents.</li>
+  </ul>
+  </div>
+
+    <div class="content-card">
+      <h2>Declaration of Currency</h2>
+      <p>Although there is no restriction on cross-border movement of bank notes in Botswana, there is however a need to monitor the movement of money into and out of Botswana for purposes of, among other things, collecting national statistics, monitoring capital flows and balance of payments, and enforcement of anti-money laundering measures.</p>
+<p>When you are entering or leaving Botswana you are required to declare Pula and/or foreign currency bank notes in your possession the amount of which equals to or exceeds an equivalent of Ten Thousand Pula (P10,000). You need not declare Travellers cheques and other monetary instruments.</p>
+<p>You are advised that under the Customs and Excise Duty Act the definition of goods includes currency, and a person who fails to declare currency may be liable to prosecution.</p>
+    </div>
+
+    <div class="content-card">
+      <h2>Motor Vehicle Clearance</h2>
+      <p>Currently, Botswana does not impose any restriction on importation or exportation of motor vehicles.</p>
+ <p>Motor vehicles imported on a temporary basis into Botswana should be imported under cover of a Temporary Import Permit issued by BURS at time of importation or an ATA Carnet. Such motor vehicles may remain in Botswana for a period not exceeding 14 days after which period customs duties and/or VAT on the motor vehicle becomes due and payable. All foreign registered vehicles entering Botswana are required to pay a National Road Safety Fund levy amounting to P40.00, which expires at the end of December of each year, and a Road Transport Permit levy charged on the basis of the leden load of a vehicle (truck) and charged for every entry into Botswana.</p>
+ <p>Motor vehicles that enter Botswana for home consumption are liable for payment of customs duties and/or VAT and therefore should be cleared for Customs purpose within 14 days from the date of entry into Botswana. The appropriate documents to submit to BURS for this purpose are: Customs Declaration Form SAD 500, Police Clearance Certificate from both the export country and Botswana Police Service, Customs Clearance documents from export country and invoice or valuation certificate from a local vehicle retail store/garage.</p>
+ <p>Customs clearance of a motor vehicle should be undertaken even if there is no intention to register it in Botswana or the vehicle is still owned by a Bank or any other third party.</p>
+     </div>
+</section>
+
+<!-- -PMP- TRAVELLER'S GUIDE -->
+<section id="travelers-guide">
+  <div class="banner">
+    <p class="crumb"><a href="index.html">Home</a> › Customs &amp; Excise</p>
+    <h2>Traveller's Guide</h2>
+  </div>
+  <div class="page-container">
+    <div class="content-card">
+      <h2>Passing Through Customs</h2>
+      <p>All persons arriving or leaving Botswana are required to unreservedly declare all goods in their possession to a Customs official on duty on a baggage declaration document called Form J.</p>
+
+<p>The BURS has a duty to protect Botswana from importation of illicit goods. To do this, checks may be made on travelers and their baggage. If you are stopped and your baggage checked, please co-operate, as we do not assume that you have done anything wrong. We pledge to treat you courteously and professionally.</p>
+    </div>
+    <div class="content-card">
+      <h2>What to Declare</h2>
+      <p>When making baggage declarations, whether verbal or written, you must ensure that you declare all goods in your possession as well as their correct values. This includes: all goods acquired in or outside Botswana in your possession, including items you received as gifts, such as wedding or birthday presents; repairs or alterations to any items or vehicle in your possession, even if the repairs/alterations were performed free of charge; items you bought in any duty-free shop including such items bought duty-free on aircraft or ship; items you are carrying for someone else and; items you intend to sell or use for commercial purposes.</p>
+
+<p>Please note that failure to declare goods and their correct values can lead to seizure of your goods and can result in criminal prosecution or the imposition of severe penalties of up to three times the value of the goods.</p>
+
+<p>To avoid delays with Baggage Declarations please produce all receipts and sales slips for goods purchased outside Botswana. If you are unsure of the goods and values that you should declare, please ask for assistance from a Customs & Excise officer. In addition, please check if your goods are subject to any payment of customs duties and taxes or to any prohibitions or restrictions prior to importation or exportation.</p>
+    </div>
+    <div class="content-card">
+      <h2>Duty Free Allowance</h2>
+      <p>The following articles and consumables (excluding any goods the importation of which is prohibited), declared at the place where the traveler enters Botswana and not imported on behalf of other persons or by way of trade, may be imported free of duty and where applicable VAT:</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr><th>Item</th><th>Allowance</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wines</td><td>2 litres</td></tr>
+            <tr><td>Spirituous &amp; alcoholic beverages</td><td>1 litre</td></tr>
+            <tr><td>Cigarettes</td><td>200</td></tr>
+            <tr><td>Cigars</td><td>20</td></tr>
+            <tr><td>Cigarette or pipe tobacco</td><td>250 grams</td></tr>
+            <tr><td>Perfume</td><td>50 ml</td></tr>
+            <tr><td>Toilet water</td><td>250 ml</td></tr>
+            <tr><td>Other goods (outside SACU)</td><td>R3,000</td></tr>
+            <tr><td>Other goods (from SACU)</td><td>R500</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-card">
+      <h2>Additional Goods</h2>
+      <p>Additional goods imported from outside SACU, new or used of a total value not exceeding R12 000.00 per person, excluding the consumable items detailed above, are admissible at a flat rate of 20%, if the owner so elects.</p>
+
+<p>Travelers/tourists should note that:</p>
+<ul>
+  <li> Customs duties and/or VAT will be payable at the applicable rates where travelers import goods exceeding the above allowances. Travelers importing goods for business or commercial purpose will not qualify for the above allowances</li>
+  <li> The concession for new and used goods specified above do not apply to such goods imported by residents of Botswana returning after an absence of less than 48 hours</li>
+  <li>With the exception of those relating to tobacco and alcoholic products, the concessions may be claimed by children under the age of 18 years, whether or not their parents or guardians accompany them, provided the goods are for use by the children themselves.</li>
+</ul>
+    </div>
+  </div>
+</section>
+
+<!-- -PMP- CUSTOMS PAYMENT -->
+<section id="customs-payment">
+  <div class="banner">
+    <p class="crumb"><a href="index.html">Home</a> › Customs &amp; Excise</p>
+    <h2>Payment of Customs Duties &amp; Import VAT</h2>
+  </div>
+  <div class="page-container">
+    <div class="content-card">
+      <h2>Clearance of Goods</h2>
+      <p>The clearance of goods involves the lodgement of a goods declaration with supporting documents (e.g. import/export permit, certificates of origin, etc.) and the payment of applicable duties and taxes. Where there are no prohibition or restriction on importation of goods, goods may be released to an importer as long as payment has been made to BURS. Such payment may be deferred by a month for traders registered with BURS for that purpose otherwise payment becomes due and payable at time of importation.
+Assessed customs duty and VAT is payable in Botswana Pula, in cash or bank guaranteed Cheque.</p>
+    </div>
+    <div class="content-card">
+      <h2>Assessment Formulas</h2>
+      <p>Goods imported into Botswana from outside the SACU market are liable to 12% VAT and tariff rates set out in the Customs and Excise Tariff Schedule. Goods imported from any SACU Member States (Lesotho, Namibia, South Africa or Swaziland) attracts only 12% VAT.</p>
+
+<p>The amount payable on goods imported into Botswana is assessed as follows:</p>
+      <div class="forms-list">Customs Duty (SACU goods) = 0<br>VAT (SACU goods) = (transaction value + insurance + freight) × 12%</div>
+      <div class="forms-list">Customs Duty (outside SACU) = transaction value × tariff rate<br>VAT (outside SACU) = (transaction value + customs duty + insurance + freight) × 12%</div>
+      <p>“Transaction value” is: the price actually paid or payable for the goods when sold for export to Botswana</p>
+
+<p>The assessed customs duty and VAT becomes payable at time of importation or within a month of importation for traders who have registered to operate deferred account facility with BURS.</p>
+
+<p>Assessed customs duty and VAT is payable in Botswana Pula, in cash or bank guaranteed Cheque.</p>
+    </div>
+    <div class="content-card">
+      <h2>Refunds</h2>
+      <p>Where it has been established that the goods declaration or in the assessment of the customs duties and/or VAT there has been a collection or recovery of an amount of customs duties and/or VAT less or more than that legally payable, BURS usually accepts correction of the errors and collect or refunds the amount underpaid or overpaid.</p>
+
+<p>A refund application form, CE 66, must be submitted within 6 months and 3 months for customs duties and VAT respectively from the date of payment. The application form should be submitted at the Customs Office where the transaction that resulted in the need for a refund was processed. The following are the necessary supporting documents for processing a refund:</p>
+<ul>
+  <li>A copy of the Customs bill of entry relating to the importation/exportation of such goods.</li>
+  <li>All supporting documents used at time of import/export, including invoices, transport documents and exemption certificates.</li>
+  <li>A copy of BURS receipt issued at time of payment</li>
+  <li>Comprehensive worksheet indicating how the duty amount claimed was calculated</li>
+  <li>Examination report/certificate by customs Officer</li>
+  <li>A Voucher of Correction, SAD 503</li>
+  <li>Original destruction certificate, where goods have destroyed under Customs supervision, where necessary</li>
+  <li>Any other document as BURS may request.</li>
+</ul>
+    </div>
+  </div>
+</section>
+
+<!-- -PMP- PROHIBITIONS -->
+<section id="prohibitions">
+  <div class="banner">
+    <p class="crumb"><a href="index.html">Home</a> › Customs &amp; Excise</p>
+    <h2>Prohibitions &amp; Restrictions of Goods</h2>
+  </div>
+  <div class="page-container">
+    <div class="content-card">
+      <h2>Prohibited Goods</h2>
+      <p>Completely prohibited from importation and exportation:</p>
+      <ul>
+        <li>Narcotic, habit-forming drugs and related substances</li>
+        <li>Military firearms, ammunition, and explosives</li>
+        <li>Indecent and obscene material (pornographic books, films, videos, software)</li>
+        <li>Semi-precious stones (agate, amethyst, jade, quartz, tourmaline, garnet, tanzanite, malachite)</li>
+      </ul>
+      <p>It is important to note that possession of prohibited goods is illegal and may result in seizure of such goods and prosecution of the person importing or exporting such goods.</p>
+    </div>
+    <div class="content-card">
+      <h2>Restricted Foodstuffs – Maximum Quantities</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr><th>Product</th><th>Maximum Quantity</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Red meat, goat/lamb</td><td>25 kg per family</td></tr>
+            <tr><td>Poultry meat</td><td>5 kg per person</td></tr>
+            <tr><td>Tinned poultry meat</td><td>20 kg per person</td></tr>
+            <tr><td>Eggs</td><td>36 per person</td></tr>
+            <tr><td>Fresh milk</td><td>2 litres per person</td></tr>
+            <tr><td>Maize &amp; products</td><td>25 kg per person</td></tr>
+            <tr><td>Sugar</td><td>12 kg per person</td></tr>
+            <tr><td>Bread loaves</td><td>6 loaves per week</td></tr>
+            <tr><td>Potatoes / Onions / Cabbage</td><td>1 bag per person</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-card">
+      <h2>Other Restricted Goods</h2>
+      <ul>
+        <li><strong>Domestic animals:</strong> Animal Health Certificate and vaccination permits required</li>
+        <li><strong>Wild animals / products:</strong> Permits from Department of Wildlife &amp; National Parks</li>
+        <li><strong>Plants, seeds, bulbs:</strong> Subject to plant health restrictions</li>
+        <li><strong>Firearms &amp; ammunition:</strong> Police permit required; strict licensing applies</li>
+        <li><strong>Boats:</strong> Import Permit from Department of Water Affairs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- -PMP- Download list -->
+<section id="tariff-downloads">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Customs &amp; Excise</p><h2>Customs Tariff Downloads</h2></div>
+  <div class="page-container"><div class="content-card"><h2>Available Downloads</h2>
+    <ul class="download-list">
+      <li><span class="download-title">Form 185 (4)</span><a href="#">Download</a></li>
+      <li><span class="download-title">Tariff Volume I – Jan 2026</span><a href="#">Download</a></li>
+      <li><span class="download-title">Tariff Volume I – July 2025</span><a href="#">Download</a></li>
+      <li><span class="download-title">Tariff Volume II – July 2025</span><a href="#">Download</a></li>
+      <li><span class="download-title">Tariff Notes 2025</span><a href="#">Download</a></li>
+      <li><span class="download-title">Customs Procedure Codes</span><a href="#">Download</a></li>
+      <li><span class="download-title">SAD Guide</span><a href="#">Download</a></li>
+    </ul>
+  </div></div>
+</section>
+
+<!-- -PMP- TRADE AGREEMENTS -->
+<section id="trade-agreements">
+  <div class="banner"><p class="crumb"><a href="index.html">Home</a> › Customs &amp; Excise</p><h2>International Trade Agreements</h2></div>
+  <div class="page-container">
+    <div class="content-card"><h2>Botswana–Zimbabwe Trade Agreement</h2><p>Goods originating from either country are exempted from customs duties if they meet a minimum <strong>25% local content</strong>. A Certificate of Origin (Form 61) is required for each consignment.</p></div>
+    <div class="content-card"><h2>SACU – Southern African Customs Union</h2><p>Botswana is a contracting member of SACU. Goods from South Africa, Namibia, Lesotho, and Eswatini enjoy free movement without customs duties. Only local taxes such as VAT apply.</p></div>
+    <div class="content-card"><h2>SACU–EFTA Agreement</h2><p>Effective 1 May 2008. Reduced tariff rates apply to qualifying goods. Exports to EFTA (Iceland, Liechtenstein, Norway, Switzerland) must be accompanied by a EUR 1 Movement Certificate and meet Rules of Origin requirements.</p></div>
+    <div class="content-card"><h2>SADC Free Trade Area</h2><p>Botswana is a SADC member committed to eliminating tariff and non-tariff barriers. Goods originating from Botswana enjoy duty-free access in SADC states. A SADC Certificate of Origin is required for each consignment.</p></div>
+    <div class="content-card"><h2>SADC–EU Economic Partnership Agreement (EPA)</h2><p>Grants Botswana goods duty-free and quota-free access into the EU market. Traders must register with BURS and obtain a EUR 1 Movement Certificate or make invoice declarations for each consignment.</p></div>
+    <div class="content-card"><h2>AGOA – African Growth and Opportunity Act</h2><p>Botswana is an AGOA beneficiary with duty-free access into the USA. Textile/apparel exports require an AGOA Certificate of Origin and VISA stamp. Non-textile exports require a GSP Certificate of Origin (Form A). Traders must keep records for 5 years.</p></div>
+  </div>
+</section>
+
+<!-- -PMP- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Botswana Unified Revenue Service</h3>
+      <p style="font-size:.82rem;line-height:1.9">Plot 53976, Kudumatse Road, opp Old Naledi<br>Gaborone, Botswana<br>Tel: +267 363 8000 &nbsp;|&nbsp; Toll Free: 0800 600 648<br>Email: info@burs.org.bw</p>
+      <div class="social-links"><a href="https://www.facebook.com/BotswanaUnifiedRevenueService" title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+        <a href="https://x.com/TheOfficialBURS" title="X" target="_blank" rel="noopener noreferrer">𝕏</a>
+        <a href="https://bw.linkedin.com/company/botswana-unified-revenue-service-burs" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+      <li><a href="tax.html">Tax</a></li><li><a href="customs.html">Customs &amp; Excise</a></li>
+      <li><a href="online-services.html">Online Services</a></li>
+    </ul></div>
+    <div><h4>Support</h4><ul>
+      <li><a href="contact.html">Contact Us</a></li><li><a href="feedback.html">Feedback</a></li>
+      <li><a href="online-services.html#request-assistance">Request Assistance</a></li><li><a href="about.html#faq">FAQ</a></li>
+    </ul></div>
+    <div><h4>Legal</h4><ul>
+      <li><a href="#">Terms of Use</a></li><li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Accessibility</a></li><li><a href="quick_links.html">Sitemap</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">© 2025 Botswana Unified Revenue Service. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

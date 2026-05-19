@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Links – BURS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand-text"><h1>BURS</h1><p>Botswana Unified Revenue Service</p></div>
+  <a href="index.html" class="btn-signin">Sign In / BISS</a>
+</header>
+<nav>
+  <div class="nav-wrapper">
+    <button class="mob-btn" id="mBtn">&#9776;</button>
+    <ul class="nav-list" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">About Us <span style="font-size:.6rem">&#9660;</span></a>
+        <ul class="dropdown">
+          <li><a href="about.html#mandate" onclick="go('mandate');return false;">Mandate</a></li>
+          <li><a href="about.html#vision-mission" onclick="go('vision-mission');return false;">Vision &amp; Mission</a></li>
+          <li><a href="about.html#org-values" onclick="go('org-values');return false;">Organisational Values</a></li>
+          <li><a href="about.html#org-structure" onclick="go('org-structure');return false;">Organisational Structure</a></li>
+          <li class="has-sub">
+            <a href="#" onclick="sub(this);return false;">Divisions</a>
+            <ul class="sub-dd">
+              <li><a href="about.html#div-comms" onclick="go('div-comms');return false;">Communications &amp; Corporate Planning</a></li>
+              <li><a href="about.html#div-finance" onclick="go('div-finance');return false;">Finance &amp; Administration</a></li>
+              <li><a href="about.html#div-hr" onclick="go('div-hr');return false;">Human Resources</a></li>
+              <li><a href="about.html#div-it" onclick="go('div-it');return false;">Information Technology</a></li>
+              <li><a href="about.html#div-audit" onclick="go('div-audit');return false;">Internal Audit &amp; Ethics</a></li>
+              <li><a href="about.html#div-legal" onclick="go('div-legal');return false;">Legal Services</a></li>
+              <li><a href="about.html#divisions-overview" onclick="go('divisions-overview');return false;">All Divisions</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#" onclick="sub(this);return false;">FAQ</a>
+            <ul class="sub-dd">
+              <li><a href="about.html#faq" onclick="go('faq');return false;">General FAQ</a></li>
+              <li><a href="about.html#faq" onclick="go('faq');return false;">VAT FAQ</a></li>
+              <li><a href="about.html#faq" onclick="go('faq');return false;">Income Tax FAQ</a></li>
+              <li><a href="about.html#faq" onclick="go('faq');return false;">Customs &amp; Excise FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Tax <span style="font-size:.6rem">&#9660;</span></a>
+        <ul class="dropdown">
+          <li class="has-sub">
+            <a href="#" onclick="sub(this);return false;">Income Tax</a>
+            <ul class="sub-dd">
+              <li><a href="tax.html#individuals" onclick="go('individuals');return false;">Individuals</a></li>
+              <li><a href="tax.html#companies" onclick="go('companies');return false;">Companies</a></li>
+              <li><a href="tax.html#withholding-tax" onclick="go('withholding-tax');return false;">Withholding Tax</a></li>
+              <li><a href="tax.html#partnerships" onclick="go('partnerships');return false;">Partnerships, Trusts &amp; PAYE</a></li>
+            </ul>
+          </li>
+          <li><a href="tax.html#vat" onclick="go('vat');return false;">Value Added Tax (VAT)</a></li>
+          <li><a href="tax.html#ctt" onclick="go('ctt');return false;">Capital Transfer Tax</a></li>
+          <li><a href="tax.html#objections" onclick="go('objections');return false;">Objections &amp; Appeals</a></li>
+          <li><a href="tax.html#tax-amendment" onclick="go('tax-amendment');return false;">Tax Amendment &amp; Tax Clearance</a></li>
+          <li><a href="tax.html#returns" onclick="go('returns');return false;">Returns &#8211; All Tax Types</a></li>
+          <li><a href="tax.html#domestic-taxes" onclick="go('domestic-taxes');return false;">Domestic Taxes Division</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Customs &amp; Excise <span style="font-size:.6rem">&#9660;</span></a>
+        <ul class="dropdown">
+          <li><a href="customs.html#customs-clearance" onclick="go('customs-clearance');return false;">Customs Clearance</a></li>
+          <li><a href="customs.html#travelers-guide" onclick="go('travelers-guide');return false;">Traveller&#39;s Guide</a></li>
+          <li><a href="customs.html#customs-payment" onclick="go('customs-payment');return false;">Payment of Customs &amp; Import VAT</a></li>
+          <li><a href="customs.html#prohibitions" onclick="go('prohibitions');return false;">Prohibitions &amp; Restrictions</a></li>
+          <li><a href="customs.html#tariff-downloads" onclick="go('tariff-downloads');return false;">Customs Tariff Downloads</a></li>
+          <li><a href="customs.html#trade-agreements" onclick="go('trade-agreements');return false;">Trade Agreements</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Treaties &amp; Laws <span style="font-size:.6rem">&#9660;</span></a>
+        <ul class="dropdown">
+          <li><a href="treaties.html#bilateral" onclick="go('bilateral');return false;">Bilateral Agreements</a></li>
+          <li><a href="customs.html#trade-agreements" onclick="go('trade-agreements');return false;">Trade Agreements</a></li>
+          <li><a href="treaties.html#revenue-laws" onclick="go('revenue-laws');return false;">Revenue Laws</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="dd(this);return false;">Online Services <span style="font-size:.6rem">&#9660;</span></a>
+        <ul class="dropdown">
+          <li><a href="online-services.html#biss-portal" onclick="go('biss-portal');return false;">BISS &#8211; Online Portal</a></li>
+          <li><a href="online-services.html#efiling" onclick="go('efiling');return false;">e-Filing of Returns</a></li>
+          <li><a href="online-services.html#tax-registration" onclick="go('tax-registration');return false;">Tax Registration</a></li>
+          <li><a href="online-services.html#online-payment" onclick="go('online-payment');return false;">Online Tax Payment</a></li>
+          <li><a href="online-services.html#check-status" onclick="go('check-status');return false;">Check Tax Status</a></li>
+          <li><a href="online-services.html#request-assistance" onclick="go('request-assistance');return false;">Request Assistance</a></li>
+          <li><a href="online-services.html">All Online Services</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="Feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="ns" placeholder="Search BURS&#8230;">
+      <button onclick="doSearch()">&#128269;</button>
+    </div>
+  </div>
+</nav>
+<!-- -PMP- QUICK LINKS (Standalone Page) -->
+<div id="page-quicklinks" class="page-section">
+  <div class="banner"><p class="crumb"><a href="#" onclick="go('home');return false;">Home</a></p><h2>Quick Links</h2><p class="sub">Jump directly to any section of the BURS website.</p></div>
+  <div class="page-container">
+    <div class="quick-links-grid">
+
+      <div class="quick-link-panel"><div class="quick-link-heading">Tax Services</div><ul>
+        <li><a href="#" onclick="go('efiling');return false;">File Income Tax Return</a></li>
+        <li><a href="#" onclick="go('efiling');return false;">File VAT Return</a></li>
+        <li><a href="#" onclick="go('online-payment');return false;">Pay Taxes Online</a></li>
+        <li><a href="#" onclick="go('tax-registration');return false;">Tax Registration</a></li>
+        <li><a href="#" onclick="go('tax-amendment');return false;">Tax Clearance Certificate</a></li>
+        <li><a href="#" onclick="go('objections');return false;">Objections &amp; Appeals</a></li>
+        <li><a href="#" onclick="go('returns');return false;">Returns – All Types</a></li>
+        <li><a href="#" onclick="go('check-status');return false;">Check Tax Status</a></li>
+      </ul></div>
+
+      <div class="quick-link-panel"><div class="quick-link-heading">Income Tax</div><ul>
+        <li><a href="#" onclick="go('individuals');return false;">Individuals</a></li>
+        <li><a href="#" onclick="go('companies');return false;">Companies</a></li>
+        <li><a href="#" onclick="go('partnerships');return false;">Partnerships, Trusts &amp; PAYE</a></li>
+        <li><a href="#" onclick="go('withholding-tax');return false;">Withholding Tax</a></li>
+        <li><a href="#" onclick="go('vat');return false;">Value Added Tax (VAT)</a></li>
+        <li><a href="#" onclick="go('ctt');return false;">Capital Transfer Tax</a></li>
+        <li><a href="#" onclick="go('domestic-taxes');return false;">Domestic Taxes Division</a></li>
+      </ul></div>
+
+      <div class="quick-link-panel"><div class="quick-link-heading">Customs &amp; Excise</div><ul>
+        <li><a href="#" onclick="go('customs-clearance');return false;">Customs Clearance</a></li>
+        <li><a href="#" onclick="go('tariff-downloads');return false;">Customs Tariff Downloads</a></li>
+        <li><a href="#" onclick="go('customs-payment');return false;">Payment of Customs &amp; Import VAT</a></li>
+        <li><a href="#" onclick="go('travelers-guide');return false;">Traveller's Guide</a></li>
+        <li><a href="#" onclick="go('prohibitions');return false;">Prohibitions &amp; Restrictions</a></li>
+        <li><a href="#" onclick="go('trade-agreements');return false;">Trade Agreements</a></li>
+      </ul></div>
+
+      <div class="quick-link-panel"><div class="quick-link-heading">Treaties &amp; Laws</div><ul>
+        <li><a href="#" onclick="go('bilateral');return false;">Bilateral Agreements (DTAAs)</a></li>
+        <li><a href="#" onclick="go('trade-agreements');return false;">Trade Agreements (SACU, SADC)</a></li>
+        <li><a href="#" onclick="go('revenue-laws');return false;">Revenue Laws</a></li>
+        <li><a href="#" onclick="go('tax-amendment');return false;">VAT Amendment Act 2015</a></li>
+      </ul></div>
+
+      <div class="quick-link-panel"><div class="quick-link-heading">Online Services</div><ul>
+        <li><a href="#" onclick="go('biss-portal');return false;">BISS Portal Login</a></li>
+        <li><a href="#" onclick="go('efiling');return false;">e-Filing of Returns</a></li>
+        <li><a href="#" onclick="go('online-payment');return false;">Online Tax Payment</a></li>
+        <li><a href="#" onclick="go('check-status');return false;">Check Tax Status</a></li>
+        <li><a href="#" onclick="go('tax-registration');return false;">Tax Registration</a></li>
+        <li><a href="#" onclick="go('request-assistance');return false;">Request Assistance</a></li>
+      </ul></div>
+
+      <div class="quick-link-panel"><div class="quick-link-heading">About BURS</div><ul>
+        <li><a href="#" onclick="go('mandate');return false;">Mandate</a></li>
+        <li><a href="#" onclick="go('vision-mission');return false;">Vision &amp; Mission</a></li>
+        <li><a href="#" onclick="go('org-structure');return false;">Organisational Structure</a></li>
+        <li><a href="#" onclick="go('divisions-overview');return false;">All Divisions</a></li>
+        <li><a href="#" onclick="go('org-values');return false;">Organisational Values</a></li>
+        <li><a href="#" onclick="go('faq');return false;">FAQ</a></li>
+      </ul></div>
+
+      <div class="quick-link-panel"><div class="quick-link-heading">Support &amp; Contact</div><ul>
+        <li><a href="#" onclick="go('contact');return false;">Contact Us</a></li>
+        <li><a href="#" onclick="go('feedback');return false;">Submit Feedback</a></li>
+        <li><a href="#" onclick="go('request-assistance');return false;">Request Assistance</a></li>
+        <li><a href="#" onclick="go('faq');return false;">Frequently Asked Questions</a></li>
+      </ul></div>
+
+      <div class="quick-link-panel"><div class="quick-link-heading">External Links</div><ul>
+        <li><a href="https://www.gov.bw" target="_blank">Government of Botswana</a></li>
+        <li><a href="https://www.finance.gov.bw" target="_blank">Ministry of Finance</a></li>
+        <li><a href="#" target="_blank">Bank of Botswana</a></li>
+        <li><a href="#" target="_blank">NBFIRA</a></li>
+        <li><a href="#" target="_blank">Statistics Botswana</a></li>
+        <li><a href="#" target="_blank">BITC</a></li>
+      </ul></div>
+
+    </div>
+  </div>
+</div>
+<!-- -PMP- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Botswana Unified Revenue Service</h3>
+      <p style="font-size:.82rem;line-height:1.9">Plot 53976, Kudumatse Road, opp Old Naledi<br>
+        Gaborone, Botswana<br>Tel: +267 363 8000 &nbsp;|&nbsp; Toll Free: 0800 600 648<br>
+        Email: info@burs.org.bw</p>
+      <div class="social-links"><a href="https://www.facebook.com/BotswanaUnifiedRevenueService" title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+        <a href="https://x.com/TheOfficialBURS" title="X" target="_blank" rel="noopener noreferrer">&#120143;</a>
+        <a href="https://bw.linkedin.com/company/botswana-unified-revenue-service-burs" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="tax.html">Tax</a></li>
+      <li><a href="customs.html">Customs &amp; Excise</a></li>
+      <li><a href="online-services.html">Online Services</a></li>
+    </ul>
+  </div>
+    <div><h4>Support</h4><ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="Feedback.html">Feedback</a></li>
+      <li><a href="online-services.html#request-assistance">Request Assistance</a></li>
+      <li><a href="about.html#faq">FAQ</a></li>
+    </ul></div>
+    <div><h4>Legal</h4><ul>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Accessibility</a></li>
+      <li><a href="quick_links.html">Sitemap</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">&copy; 2025 Botswana Unified Revenue Service. All rights reserved.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
